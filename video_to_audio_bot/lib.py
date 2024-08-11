@@ -1,5 +1,6 @@
 from bot_lib import Handler, HandlerDisplayMode
 from calmapp import App
+from video_to_audio_bot.utils import convert_video_to_audio
 
 
 class MyApp(App):
@@ -20,6 +21,11 @@ class MyApp(App):
 
     def dummy_command(self):
         return "Hey! I am a dummy"
+
+    def convert_video_to_audio(self, video):
+        audio = convert_video_to_audio(video)
+        return audio
+        # return "Video converted to audio"
 
 
 class MyHandler(Handler):

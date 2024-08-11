@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
 from dotenv import load_dotenv
-from project_name.lib import MyApp, MyHandler  # MyPlugin
+from video_to_audio_bot.lib import MyApp, MyHandler  # MyPlugin
 
 from bot_lib import (
     BotConfig,
